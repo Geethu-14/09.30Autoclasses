@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class FileHandling4 {
 
+	private static Scanner sc1;
 	public void WriteData(int rowcount) throws IOException {
 		File f = new File("../BasicProgram/src/FileWrite.txt");
 		FileWriter fw= new FileWriter(f);
@@ -21,7 +22,7 @@ public class FileHandling4 {
 	}
 	public static void main(String[] args) throws IOException {
 		System.out.println("Enter a row counter for the file: ");
-		Scanner sc1= new Scanner(System.in);
+		sc1 = new Scanner(System.in);
 		int x = sc1.nextInt();
 		
 		FileHandling4 rc = new FileHandling4();
