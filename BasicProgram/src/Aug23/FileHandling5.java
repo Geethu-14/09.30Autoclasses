@@ -9,7 +9,6 @@ import java.util.Scanner;
 public class FileHandling5 {
 	
 	private static Scanner sc1;
-	private static Scanner sc2;
 	public void WritewithRange(int initialrowCount, int endrowCount) throws IOException {
 		File f =new File("../BasicProgram/src/FileWrite.txt");
 		FileWriter fw =new FileWriter(f);
@@ -33,7 +32,7 @@ public class FileHandling5 {
 		int x = sc1.nextInt();
 		
 		System.out.println("Enter End row: ");
-		sc2 = new Scanner(System.in);
+		Scanner sc2= new Scanner(System.in);
 		int y = sc2.nextInt();
 		
 		FileHandling5 rc = new FileHandling5();

@@ -2,6 +2,7 @@ package AutomationClass;
 
 public class Day3 {
 	
+	private static Day3 d3;
 	public Day3() {
 		this(13,12,11);
 		System.out.println("Parent Default parameterized");
@@ -22,6 +23,6 @@ public class Day3 {
 		System.out.println("Parent Four parameterized");
 	}
 	public static void main(String[] args) {
-		Day3 d3 = new Day3(20,21);
+		d3 = new Day3(20,21);
 	}
 }
