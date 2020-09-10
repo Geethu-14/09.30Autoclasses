@@ -26,10 +26,10 @@ public class ExcelHandling3 {
 }
 	public static void main(String[] args) throws BiffException, IOException {
 		ExcelHandling3 rc = new ExcelHandling3();
-		System.out.println("Enter row number of excel(limit 1-10)");
+		System.out.println("Enter initial row number of excel(limit 1-10)");
 		sc = new Scanner(System.in);
 		int rowstart=sc.nextInt();
-		System.out.println("Enter row number of excel(limit 1-10)");
+		System.out.println("Enter end row number of excel(limit 1-10)");
 		sc = new Scanner(System.in);
 		int rowend=sc.nextInt();
 		rc.readdatafromRow(rowstart, rowend);
